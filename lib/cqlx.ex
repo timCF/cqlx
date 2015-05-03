@@ -63,11 +63,12 @@ defmodule Cqlx do
 		cql_query(
 			consistency: 4,
 			statement: q,
-			values: args |> Enum.map(fn({k,v}) -> {k, maybe_to_list(v)} end),
+			values: args |> Enum.map(fn({k,v}) -> {k, maybe_transform_arg(v)} end),
 			page_size: 100
 		)		
 	end
-	defp maybe_to_list(map) when is_map(map), do: Enum.to_list(map)
-	defp maybe_to_list(some), do: some
+	defp maybe_transform_arg(str) when is_binary(str), do: String.to_char_list(str)
+	defp maybe_transform_arg(map) when is_map(map), do: Enum.map(map, fn({k,v}) -> {k, maybe_transform_arg(v)} end)
+	defp maybe_transform_arg(some), do: some
 
 end
