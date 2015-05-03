@@ -63,9 +63,11 @@ defmodule Cqlx do
 		cql_query(
 			consistency: 4,
 			statement: q,
-			values: args,
+			values: args |> Enum.map(fn({k,v}) -> {k, maybe_to_list(v)} end),
 			page_size: 100
 		)		
 	end
+	defp maybe_to_list(map) when is_map(map), do: Enum.to_list(map)
+	defp maybe_to_list(some), do: some
 
 end
