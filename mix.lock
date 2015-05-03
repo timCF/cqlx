@@ -1,0 +1,13 @@
+%{"cqerl": {:git, "git://github.com/matehat/cqerl.git", "89548a5840be853953af6ba3be7453cf7babcab2", []},
+  "exactor": {:git, "git://github.com/sasa1977/exactor.git", "0467f8100bc735405d597dbf94996195eb31e0b6", [tag: "0467f8100bc735405d597dbf94996195eb31e0b6"]},
+  "extask": {:git, "git://github.com/timCF/extask.git", "691cc1a515750bead8b81ed6c13cddbcf115d754", []},
+  "exutils": {:git, "git://github.com/timCF/exutils.git", "06c4144ba17ca1f4e83da5cf94859dfa2a38800b", []},
+  "hashex": {:git, "git://github.com/timCF/hashex.git", "cc6b4307daa1ab18c94cdd33bf3cb8a3dab28b96", []},
+  "lz4": {:git, "https://github.com/szktty/erlang-lz4.git", "30878eafeff35939052c2cafe17d21c95029d3a1", []},
+  "pooler": {:git, "https://github.com/seth/pooler.git", "2888321cd799234183dfcba82f335207d68e354d", []},
+  "quickrand": {:git, "https://github.com/okeuday/quickrand.git", "49aa03828233b2fec398ea4244a568aeac827dd8", [tag: "v1.5.0"]},
+  "randex": {:git, "git://github.com/timCF/randex.git", "8ba5ef6c39ca97470b12fc38c85e8e49d70995b9", []},
+  "re2": {:git, "https://github.com/tuncer/re2.git", "0095ad8b65dbc911b24d8386f0b678ffb9a68fd4", []},
+  "semver": {:git, "https://github.com/nebularis/semver.git", "c7d509f38298ec6594be4efdcd8a8f2322760039", []},
+  "snappy": {:git, "https://github.com/fdmanana/snappy-erlang-nif.git", "ec2061113147af20916e9765ae9d63a18114825a", []},
+  "uuid": {:git, "https://github.com/okeuday/uuid.git", "6bc38507460c821321d66504d3f8d6c1cdb57d98", []}}
