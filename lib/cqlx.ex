@@ -67,7 +67,7 @@ defmodule Cqlx do
 			page_size: 100
 		)		
 	end
-	defp maybe_transform_arg(str) when is_binary(str), do: String.to_char_list(str)
+	defp maybe_transform_arg(str) when is_binary(str), do: :erlang.binary_to_list(str)
 	defp maybe_transform_arg(map) when is_map(map), do: Enum.map(map, fn({k,v}) -> {k, maybe_transform_arg(v)} end)
 	defp maybe_transform_arg(some), do: some
 
