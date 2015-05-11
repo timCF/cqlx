@@ -16,8 +16,9 @@ defmodule Cqlx.Mixfile do
     					:logger,
 
     					:cqerl,
-              :uuid,
-              :semver,
+		                :uuid,
+		                :semver,
+		                :re2,
 
     					:hashex,
     					:randex
@@ -37,11 +38,11 @@ defmodule Cqlx.Mixfile do
   defp deps do
     [
 		{:cqerl, github: "matehat/cqerl"},
-    #
-    # deps for cqerl
-    #
-    {:uuid, github: "okeuday/uuid", tag: "c2900b499ce9569f0da6ac462a1e82c7c03fd9f4", override: true},
-    {:semver, github: "nebularis/semver", tag: "c7d509f38298ec6594be4efdcd8a8f2322760039", override: true},
+	    #
+	    # deps for cqerl
+	    #
+	    {:uuid, github: "okeuday/uuid", tag: "c2900b499ce9569f0da6ac462a1e82c7c03fd9f4", override: true},
+	    {:semver, github: "nebularis/semver", tag: "c7d509f38298ec6594be4efdcd8a8f2322760039", override: true},
 
 		{:hashex, github: "timCF/hashex"},
 		{:randex, github: "timCF/randex"}
